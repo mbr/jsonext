@@ -4,7 +4,7 @@ This module provides mixins for the stdlib :class:`json.JSONEncoder` class,
 adding serialization methods for other object types, such as
 :class:`~datetime.datetime` objects or iterables.
 
-All these are ready to use by using :data:`~jsonext.json_enc`.
+All these are ready to use by using :data:`~jsonext.dumps`.
 """
 
 import functools
