@@ -38,6 +38,7 @@ class JSONIterableMixin(object):
     or iterators, but will trip up the encoder. Beware of infinite
     generators.
 
+    >>> import jsonext
     >>> gen = (i**2 for i in range(10))
     >>> jsonext.dumps(gen)
     '[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]'
@@ -56,6 +57,7 @@ class JSONToDictMixin(object):
     """A mixin for JSONEncoders, encoding any object with a to_dict() method
     by calling that method and encoding the return value.
 
+    >>> import jsonext
     >>> class Foo(object):
     ...   def __init__(self, a, b):
     ...     self.a = a
@@ -77,6 +79,7 @@ class JSONStringifyMixin(object):
     """A mixing for JSONEncoders, encoding any object that has a ``__str__``
     method with the return value of said function.
 
+    >>> import jsonext
     >>> from decimal import Decimal as D
     >>> x = D('123.456')
     >>> jsonext.dumps(x)
