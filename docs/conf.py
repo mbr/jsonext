@@ -31,7 +31,6 @@ import sphinx_readable_theme
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.doctest',
     'sphinx.ext.intersphinx',
 ]
 
