@@ -9,7 +9,7 @@ class JSONDateTimeMixin(object):
 
     All timestamps are converted to UTC before being serialized.
 
-    Date objects simply use :method:`~date.isoformat`.
+    Date objects simply use :meth:`~datetime.date.isoformat`.
 
     >>> import jsonext
     >>> from datetime import datetime
@@ -74,7 +74,7 @@ class JSONToDictMixin(object):
 
 
 class JSONStringifyMixin(object):
-    """A mixing for JSONEncoders, encoding any object that has a __str__
+    """A mixing for JSONEncoders, encoding any object that has a ``__str__``
     method with the return value of said function.
 
     >>> from decimal import Decimal as D
