@@ -44,6 +44,7 @@ class JSONIterableMixin(object):
     >>> jsonext.dumps(gen)
     '[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]'
     """
+
     def default(self, o):
         try:
             iterable = iter(o)
@@ -70,6 +71,7 @@ class JSONToDictMixin(object):
     >>> jsonext.dumps(items)
     '[{"A": 1, "B": 2}, {"A": 3, "B": 4}]'
     """
+
     def default(self, o):
         if hasattr(o, 'to_dict'):
             return o.to_dict()
@@ -90,6 +92,7 @@ class JSONStringifyMixin(object):
     >>> jsonext.dumps(t)
     '"5 days, 3:25:45"'
     """
+
     def default(self, o):
         if hasattr(o, '__str__'):
             return str(o)

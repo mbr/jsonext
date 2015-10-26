@@ -14,8 +14,8 @@ setup(
     name='jsonext',
     version='0.4.2.dev1',
     description='Well-structured helpers to help serializing commonly '
-                'encountered structures to JSON (like datetime, to_dict(), '
-                ' etc.',
+    'encountered structures to JSON (like datetime, to_dict(), '
+    ' etc.',
     long_description=read('README.rst'),
     author='Marc Brinkmann',
     author_email='git@marcbrinkmann.de',
