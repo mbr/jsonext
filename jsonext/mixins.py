@@ -1,5 +1,5 @@
 import datetime
-import times
+import arrow
 
 
 class JSONDateTimeMixin(object):
@@ -22,9 +22,10 @@ class JSONDateTimeMixin(object):
     >>> jsonext.dumps(d)
     '"2013-11-17"'
     """
+
     def default(self, o):
         if isinstance(o, datetime.datetime):
-            return times.format(o, 'Zulu')
+            return arrow.get(o).to('utc').isoformat()
         if isinstance(o, datetime.date):
             return o.isoformat()
         return super(JSONDateTimeMixin, self).default(o)

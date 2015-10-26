@@ -22,5 +22,4 @@ setup(
     url='http://github.com/mbr/jsonext',
     license='MIT',
     packages=find_packages(exclude=['tests']),
-    install_requires=['times'],
-)
+    install_requires=['arrow'], )
