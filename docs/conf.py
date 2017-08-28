@@ -181,26 +181,25 @@ html_theme_path = [sphinx_readable_theme.get_html_theme_path()]
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'jsonextdoc'
 
-
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_elements = {
-# The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
+    # The paper size ('letterpaper' or 'a4paper').
+    #'papersize': 'letterpaper',
 
-# The font size ('10pt', '11pt' or '12pt').
-#'pointsize': '10pt',
+    # The font size ('10pt', '11pt' or '12pt').
+    #'pointsize': '10pt',
 
-# Additional stuff for the LaTeX preamble.
-#'preamble': '',
+    # Additional stuff for the LaTeX preamble.
+    #'preamble': '',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'jsonext.tex', u'jsonext Documentation',
-   u'Marc Brinkmann', 'manual'),
+    ('index', 'jsonext.tex', u'jsonext Documentation', u'Marc Brinkmann',
+     'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -223,19 +222,15 @@ latex_documents = [
 # If false, no module index is generated.
 #latex_domain_indices = True
 
-
 # -- Options for manual page output ---------------------------------------
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [
-    ('index', 'jsonext', u'jsonext Documentation',
-     [u'Marc Brinkmann'], 1)
-]
+man_pages = [('index', 'jsonext', u'jsonext Documentation',
+              [u'Marc Brinkmann'], 1)]
 
 # If true, show URL addresses after external links.
 #man_show_urls = False
-
 
 # -- Options for Texinfo output -------------------------------------------
 
@@ -243,9 +238,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'jsonext', u'jsonext Documentation',
-   u'Marc Brinkmann', 'jsonext', 'One line description of project.',
-   'Miscellaneous'),
+    ('index', 'jsonext', u'jsonext Documentation', u'Marc Brinkmann',
+     'jsonext', 'One line description of project.', 'Miscellaneous'),
 ]
 
 # Documents to append as an appendix to all manuals.
@@ -259,7 +253,6 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
-
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'http://docs.python.org/': None}
