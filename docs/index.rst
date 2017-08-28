@@ -54,7 +54,7 @@ Shortcuts
 ---------
 
 Some shortcuts are provided if less customization is needed. The
-:class:`jsonext.JSONEncoder` is a :class:`json.JSONEncoder` with some
+`jsonext.JSONEncoder` is a :class:`~jsonext.mixins.JSONEncoder` with some
 commonly useful classes mixed in: :class:`~jsonext.mixins.JSONDateTimeMixin`,
 :class:`~jsonext.mixins.JSONIterableMixin`,
 :class:`~jsonext.mixins.JSONToDictMixin`,
