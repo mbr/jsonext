@@ -1,5 +1,4 @@
 import arrow
-import datetime
 import re
 
 import six
@@ -44,7 +43,7 @@ class DecoderWrapper(object):
         if isinstance(value, bool):
             return self._convert_bool(value)
         if value is None:
-            return self.convert_none(value)
+            return self._convert_none(value)
         assert False, 'unreachable'
 
     def decode(self, *args, **kwargs):
